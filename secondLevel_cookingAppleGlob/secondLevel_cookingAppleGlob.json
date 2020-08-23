@@ -1,0 +1,19 @@
+{
+  "pipeline": {
+    "name": "secondLevel_cookingAppleGlob"
+  },
+  "transform": {
+    "image": "geohouse7/python_list_glob_files_fruits",
+    "cmd": [ "python3", "/python_listGlobbedFiles_fruits.py" ]
+  },
+  "input": {
+        "pfs": {
+            "repo": "fruits",
+            "glob": "/apple/cooking/"
+        }
+    },
+      "standby": true,
+  "parallelism_spec": {
+    "constant": 1
+  }
+}

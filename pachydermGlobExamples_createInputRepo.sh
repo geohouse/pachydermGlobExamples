@@ -1,20 +1,20 @@
 #!/bin/bash
 
-parentDir="~/Documents/pachyderm-glob-demo"
+# parentDir="pachydermGlobExamples"
+# 
+# mkdir -p $parentDir
+# 
+# cd $parentDir
 
-mkdir -p $parentDir
-
-cd $parentDir
-
-touch coconut.txt
-touch macintosh.txt
-touch bramley.txt
-touch cortland.txt
-touch lemon.txt
-touch orange.txt
-touch turnip.txt
-touch carrot.txt
-touch gherkin.txt
+echo "coconut" > coconut.txt
+echo "macintosh" > macintosh.txt
+echo "bramley" > bramley.txt
+echo "cortland" > cortland.txt
+echo "lemon" > lemon.txt
+echo "orange" > orange.txt
+echo "turnip" >  turnip.txt
+echo "carrot" > carrot.txt
+echo "gherkin" > gherkin.txt
 
 pachctl create repo fruits
 
