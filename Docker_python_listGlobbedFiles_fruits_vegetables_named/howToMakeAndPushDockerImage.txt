@@ -1,0 +1,7 @@
+# Step 1
+docker build --tag geohouse7/python_list_glob_files_fruits_and_veg_named .
+
+# Step 2
+docker push geohouse7/python_list_glob_files_fruits_and_veg_named
+
+# Step 3 - Make sure name of built and pushed Docker image matches that called for in the 'image' section of the Pachyderm pipeline specification .json file

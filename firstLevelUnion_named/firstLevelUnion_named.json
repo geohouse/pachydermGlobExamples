@@ -1,0 +1,32 @@
+{
+  "pipeline": {
+    "name": "firstLevelUnion_named"
+  },
+  "transform": {
+    "image": "geohouse7/python_list_glob_files_fruits_and_veg_named",
+    "cmd": [ "python3", "/python_listGlobbedFiles_fruits_and_veg_named.py" ]
+  },
+   
+  "input": {
+    "union": [
+        {
+            "pfs": {
+            	"name": "combined",
+            	"repo": "fruits",
+                "glob": "/*"
+            }
+        },
+        {
+            "pfs": {
+            	"name": "combined",
+             	"repo": "vegetables",
+                "glob": "/*"
+            }
+        }
+    ]
+},
+      "standby": true,
+  "parallelism_spec": {
+    "constant": 1
+  }
+}
